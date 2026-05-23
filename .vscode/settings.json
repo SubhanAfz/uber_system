@@ -1,0 +1,48 @@
+{
+  "craftos-pc.dataPath": "/Users/subhan/Desktop/Code/cc_tweaked/.craftos-pc",
+  "Lua.runtime.version": "Lua 5.1",
+  "Lua.diagnostics.globals": [
+    "_HOST",
+    "_CC_DEFAULT_SETTINGS",
+    "colors",
+    "colours",
+    "commands",
+    "disk",
+    "fs",
+    "gps",
+    "help",
+    "http",
+    "io",
+    "keys",
+    "multishell",
+    "paintutils",
+    "parallel",
+    "peripheral",
+    "pocket",
+    "rednet",
+    "redstone",
+    "rs",
+    "settings",
+    "shell",
+    "sleep",
+    "term",
+    "textutils",
+    "turtle",
+    "vector",
+    "window",
+    "write",
+    "printError"
+  ],
+  "Lua.workspace.checkThirdParty": "Disable",
+  "Lua.workspace.useGitIgnore": true,
+  "Lua.workspace.maxPreload": 2000,
+  "Lua.workspace.preloadFileSize": 200,
+  "Lua.diagnostics.disableScheme": [
+    "git",
+    "craftos-pc"
+  ],
+  "Lua.workspace.ignoreDir": [
+    ".vscode",
+    ".git"
+  ]
+}

@@ -1,0 +1,107 @@
+<frame name="coordsRoot" x="1" y="1" width="{parent.width}" height="{parent.height}" background="lightGray">
+    <frame
+        name="coordsForm"
+        width="{math.max(1, math.min(parent.width - 2, 38))}"
+        height="11"
+        x="{math.max(1, math.floor(parent.width / 2 - self.width / 2))}"
+        y="{math.max(1, math.floor(parent.height / 2 - self.height / 2))}"
+        backgroundEnabled="false">
+
+        <label
+            x="{math.max(1, math.floor(parent.width / 2 - 6))}"
+            y="1"
+            text="Type location"
+            foreground="gray"
+        />
+
+        <frame
+            name="xField"
+            x="2"
+            y="4"
+            width="10"
+            height="3"
+            background="white"
+            borderTop="true"
+            borderBottom="true"
+            borderLeft="true"
+            borderRight="true"
+            borderColor="gray"
+        >
+            <input
+                name="xInput"
+                x="2"
+                y="2"
+                width="7"
+                height="1"
+                background="white"
+                foreground="black"
+                placeholder="X"
+                placeholderColor="gray"
+            />
+        </frame>
+
+        <frame
+            name="yField"
+            x="14"
+            y="4"
+            width="10"
+            height="3"
+            background="white"
+            borderTop="true"
+            borderBottom="true"
+            borderLeft="true"
+            borderRight="true"
+            borderColor="gray"
+        >
+            <input
+                name="yInput"
+                x="2"
+                y="2"
+                width="7"
+                height="1"
+                background="white"
+                foreground="black"
+                placeholder="Y"
+                placeholderColor="gray"
+            />
+        </frame>
+
+        <frame
+            name="zField"
+            x="26"
+            y="4"
+            width="10"
+            height="3"
+            background="white"
+            borderTop="true"
+            borderBottom="true"
+            borderLeft="true"
+            borderRight="true"
+            borderColor="gray"
+        >
+            <input
+                name="zInput"
+                x="2"
+                y="2"
+                width="7"
+                height="1"
+                background="white"
+                foreground="black"
+                placeholder="Z"
+                placeholderColor="gray"
+            />
+        </frame>
+
+        <button
+            name="goButton"
+            x="{math.max(1, math.floor(parent.width / 2 - self.width / 2))}"
+            y="9"
+            width="12"
+            height="3"
+            text="Go"
+            background="green"
+            foreground="white"
+            onClick="submitCoords"
+        />
+    </frame>
+</frame>

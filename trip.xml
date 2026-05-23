@@ -1,0 +1,52 @@
+<frame name="tripRoot" x="1" y="1" width="{parent.width}" height="{parent.height}" background="lightGray">
+    <label
+        x="{math.max(1, math.floor(parent.width / 2 - 8))}"
+        y="{math.max(2, math.floor(parent.height * 0.14))}"
+        width="17"
+        height="1"
+        text="Airship Arriving"
+        foreground="gray"
+    />
+
+    <label
+        name="arrivalLabel"
+        x="{math.max(1, math.floor(parent.width / 2 - 11))}"
+        y="{math.max(3, math.floor(parent.height * 0.14) + 1)}"
+        width="23"
+        height="1"
+        text="at (X, Y, Z) - X Away"
+        foreground="gray"
+    />
+
+    <button
+        x="{math.max(1, math.floor(parent.width * 0.08))}"
+        y="{math.max(4, math.floor(parent.height * 0.22))}"
+        width="{math.max(14, parent.width - math.max(2, math.floor(parent.width * 0.16)))}"
+        height="3"
+        text="Elevator Down"
+        background="blue"
+        foreground="white"
+    />
+
+    <button
+        x="{math.max(1, math.floor(parent.width * 0.08))}"
+        y="{math.max(8, math.floor(parent.height * 0.46))}"
+        width="{math.max(14, parent.width - math.max(2, math.floor(parent.width * 0.16)))}"
+        height="3"
+        text="Elevator Up"
+        background="blue"
+        foreground="white"
+    />
+
+    <button
+        name="endButton"
+        x="{math.max(1, math.floor(parent.width * 0.08))}"
+        y="{math.max(12, math.floor(parent.height * 0.70))}"
+        width="{math.max(14, parent.width - math.max(2, math.floor(parent.width * 0.16)))}"
+        height="3"
+        text="End"
+        background="red"
+        foreground="white"
+        onClick="showCoords"
+    />
+</frame>
