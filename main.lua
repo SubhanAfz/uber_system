@@ -7,8 +7,18 @@ local function readFile(path)
     return content
 end
 
-local main = basalt.getMainFrame()
-local width, height = term.getSize()
+local monitor = peripheral.find("monitor")
+local main
+local width
+local height
+
+if monitor then
+    main = basalt.createFrame():setTerm(monitor)
+    width, height = monitor.getSize()
+else
+    main = basalt.getMainFrame()
+    width, height = term.getSize()
+end
 
 local coordsScreen = main:addFrame()
 coordsScreen:setPosition(1, 1)
